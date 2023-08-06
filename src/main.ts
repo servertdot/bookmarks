@@ -1,4 +1,3 @@
-import './style.css'
 import { changeTheme } from './utils/changeTheme'
 import { appendExistingList, generateBookmarksList } from './utils/generateList';
 import { debounce, findByValue, generateDropdownItems } from './utils/search';
