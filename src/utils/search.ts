@@ -1,10 +1,3 @@
-const searchItem = document.querySelector('.search');
-const bookmarkList = document.querySelector('.list');
-
-// searchItem?.addEventListener('change', (e) => {
-//   console.log(e)
-// })
-
 export const debounce = (cb: any, delay = 1000) => {
   let timer: any;
 

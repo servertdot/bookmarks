@@ -27,21 +27,6 @@ const getRange1 = (isDay: boolean, hours: string) => {
   return milliseconds;
 }
 
-const getRange = (isDay: boolean, hours: number) => {
-  const currentDateTime = new Date().setHours(hours);
-  const targetDateTime = new Date().setHours(isDay ? 18 : 8);
-
-  if (isDay) {
-    const ms = targetDateTime - currentDateTime;
-    // return Math.floor(ms / 1000 / 60 / 60)
-    return ms
-  } 
-
-  const ms = (targetDateTime - currentDateTime) + (24 * 60 * 60 * 1000);
-  // return Math.floor(ms / 1000 / 60 / 60)
-  return ms
-}
-
 const updateSessionStorage = (key: string, value: string) => {
   sessionStorage.setItem(key, value);
 }
